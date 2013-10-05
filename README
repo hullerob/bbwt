@@ -1,0 +1,31 @@
+NAME
+====
+
+BBWT - Bijective Burrows-Wheeler Transform
+
+DESCRIPTION
+===========
+
+Pure Go implementation of Bijective String Sorting Transform [0].
+
+This is an experiment, not intended to be production ready nor to
+be fast and efficient.
+
+INSTALL
+=======
+
+  go get github.com/hullerob/bbwt
+
+USAGE
+=====
+
+  import "github.com/hullerob/bbwt"
+  ...
+  encodedData := bbwt.Encode(data)
+  ...
+  decodedData := bbwt.Decode(encodedData)
+
+REFERENCES
+==========
+
+[0] J. Gill, D. A. Scott. A Bijective String Sorting Transform, 2009
